@@ -1244,9 +1244,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 20.7.1
-  resolution: "@types/node@npm:20.7.1"
-  checksum: 3140bd6c9130f1ed73a78ce7a1765ee43e155c1eea50eea45e18faeb31d11d97a84fffdc5e3a97582101d2f57d2652a50f510ede6c702780267bad74c822d56c
+  version: 20.7.2
+  resolution: "@types/node@npm:20.7.2"
+  checksum: 5baa09368c8daa50ad1eaa2499b988b2f4c06cacf8b251d1e63f68ad32df97b21d8104f1ac06889481f1d3e84056842732bb848dd1136164d823c1d4a6baf435
   languageName: node
   linkType: hard
 
@@ -2385,6 +2385,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jwt@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "jwt@npm:0.2.0"
+  dependencies:
+    node-base64: 0.0.1
+  checksum: d02e1935d5675b36a5290a163df8de795814e3fc56bc0101200c40cea8fd7dbd1da94428dda57ddb6ed9ddf4561965d9d96871e60c2c86c5e66ace3b99ad7734
+  languageName: node
+  linkType: hard
+
 "kareem@npm:2.5.1":
   version: 2.5.1
   resolution: "kareem@npm:2.5.1"
@@ -2803,6 +2812,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"node-base64@npm:0.0.1":
+  version: 0.0.1
+  resolution: "node-base64@npm:0.0.1"
+  checksum: fa681fb3b498ff362bcae12a6042fd55d232ffada852df480aedce462fca2fc32f8b1f353738d551d2c8a9430f8bf2473746277ba539e3b42b915bee2a1876b9
+  languageName: node
+  linkType: hard
+
 "node-fetch@npm:^2.6.7":
   version: 2.7.0
   resolution: "node-fetch@npm:2.7.0"
@@ -3143,6 +3159,7 @@ __metadata:
     express: ^4.18.2
     image-downloader: ^4.3.0
     jsonwebtoken: ^9.0.2
+    jwt: ^0.2.0
     mime-types: ^2.1.35
     mongoose: ^7.5.3
     multer: ^1.4.5-lts.1
