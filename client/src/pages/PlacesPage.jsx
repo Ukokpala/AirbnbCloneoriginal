@@ -5,7 +5,7 @@ import AccountNav from "../AccountNav";
 export default function PlacesPage() {
   const [places,setPlaces] = useState([]);
   useEffect(() => {
-    axios.get('/user-places').then(({data}) => {
+    axios.get('/userplaces').then(({data}) => {
       setPlaces(data);
     });
   }, []);
