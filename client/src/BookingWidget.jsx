@@ -31,7 +31,7 @@ export default function BookingWidget({place}) {
       price:numberOfNights * place.price,
     });
     const bookingId = response.data._id;
-    setRedirect(`/account/bookings/${bookingId}`);
+    setRedirect(`/account/bookings/&#8358;{bookingId}`);
   }
 
   if (redirect) {
@@ -41,7 +41,7 @@ export default function BookingWidget({place}) {
   return (
     <div className="bg-white shadow p-4 rounded-2xl">
       <div className="text-2xl text-center">
-        Price: ${place.price} / per night
+        Price: &#8358;{place.price} / per night
       </div>
       <div className="border rounded-2xl mt-4">
         <div className="flex">
@@ -79,7 +79,7 @@ export default function BookingWidget({place}) {
       <button onClick={bookThisPlace} className="primary mt-4">
         Book this place
         {numberOfNights > 0 && (
-          <span> ${numberOfNights * place.price}</span>
+          <span> &#8358;{numberOfNights * place.price}</span>
         )}
       </button>
     </div>
